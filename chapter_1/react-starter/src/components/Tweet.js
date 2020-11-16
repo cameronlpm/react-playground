@@ -2,8 +2,9 @@ import React from 'react';
 
 function Tweet() {
     return (
-        <div>
-            <h1>This is a tweet</h1>
+        <div className="tweet">
+            <h2>Name</h2>
+            <h3>This is a tweet</h3>
             <button>Like</button>
             <button>Delete</button>
         </div>
