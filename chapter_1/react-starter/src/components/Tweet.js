@@ -1,11 +1,10 @@
 import React from 'react';
 
-function Tweet(props) {
-    console.log(props);
+function Tweet({ name, message }) {
     return (
         <div className="tweet">
-            <h2>Name: {props.name}</h2>
-            <h3>{props.message}</h3>
+            <h2>Name: {name}</h2>
+            <h3>{message}</h3>
             <button>Like</button>
             <button>Delete</button>
         </div>
