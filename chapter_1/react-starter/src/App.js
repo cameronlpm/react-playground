@@ -1,16 +1,23 @@
 import React from 'react';
-import Tweet from './components/Tweet';
+import TweetList from './components/TweetList';
 import CreateTweet from './components/CreateTweet';
 
 function App() {
+
   const name = "Pancake";
-  let message = "this is the raw tweet literal";
+  const message = "rolled around on the floor today";
+  
+  const sayHelloHandler = () => {
+    console.log(`hello`);
+  };
 
   return (
     <div>
       <h1>456</h1>
       <CreateTweet />
-      <Tweet name={name} message={message}/>
+      <TweetList name={name} message={message} />
+      <h1>Hello React</h1>
+      <button onClick={sayHelloHandler} >Click</button>
     </div>
   );
 }
