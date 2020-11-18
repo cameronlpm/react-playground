@@ -1,6 +1,7 @@
 import React from 'react';
 
 function Tweet({ name, message }) {
+
     return (
         <div className="tweet">
             <h2>Name: {name} </h2>
